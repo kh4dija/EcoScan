@@ -4,8 +4,12 @@ EcoScan is a mobile application designed to help users accurately sort their was
 
 ## 👥 The Team (Section B)
 * **Khadija**
-* **Azeen Isha** * **Urwa Ahmad** * **Hibba Amir**
-* **Eman Fatima** ## 🚀 Features
+* **Azeen Isha** 
+* **Urwa Ahmad** 
+* **Hibba Amir**
+* **Eman Fatima**
+
+## 🚀 Features
 * **Real-Time Recognition:** Processes live camera feeds or uploaded photos directly on a mobile device.
 * **Multi-Class Categorization:** Identifies 8 standardized waste categories (Plastic, Glass, Metal, Organic, Paper/Cardboard, Textiles, Battery, and General Trash).
 * **Confidence Scoring:** Generates probability percentages to indicate prediction reliability.
