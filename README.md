@@ -67,11 +67,17 @@ Linear classification model for multi-class prediction.
 📈 Model Performance
 
 Model	Accuracy
+
 MobileNet	72.68%
+
 Logistic Regression	71.25%
+
 Random Forest	48.70%
+
 K-Nearest Neighbors (KNN)	43.31%
+
 Decision Tree Classifier	31.96%
+
 
 🏆 Best Performing Model: MobileNet (72.68%)
 
@@ -88,34 +94,6 @@ Decision Tree Classifier	31.96%
 
 ⸻
 
-📂 Repository Structure
-
-EcoScan
-│
-├── Model_Code
-│   ├── MobileNet.ipynb
-│   ├── Random_Forest.ipynb
-│   ├── Decision_Tree_Classifier.ipynb
-│   ├── KNN.ipynb
-│   └── Logistic_Regression.ipynb
-│
-├── Saved_Models
-│
-├── Dataset
-│   └── Sample_Images
-│
-├── Screenshots
-│   ├── Accuracy Results
-│   ├── Classification Reports
-│   ├── Confusion Matrices
-│   └── Prediction Tests
-│
-├── Poster
-│   └── EcoScan_Poster.png
-│
-└── README.md
-
-⸻
 
 📸 Results
 
