@@ -1,23 +1,154 @@
-# EcoScan: Real-time Waste Classification for Sustainable Disposal ♻️
+♻️ EcoScan: AI-Powered Waste Classification System
 
-EcoScan is a mobile application designed to help users accurately sort their waste into the correct bins (recycling, compost, or regular trash) using real-time AI image classification. This project was developed for the BNU Artificial Intelligence Lab (CSC-233) to support the WWF-Certified EcoSmart Campus initiative and promote SDGs like Responsible Consumption and Climate Action.
+EcoScan is an AI-based waste classification system developed to identify different types of waste from images. The project compares multiple Machine Learning and Deep Learning models to determine the most effective approach for waste classification and environmental sustainability.
 
-## 👥 The Team (Section B)
-* **Khadija**
-* **Azeen Isha** 
-* **Urwa Ahmad** 
-* **Hibba Amir**
-* **Eman Fatima**
+⸻
 
-## 🚀 Features
-* **Real-Time Recognition:** Processes live camera feeds or uploaded photos directly on a mobile device.
-* **Multi-Class Categorization:** Identifies 8 standardized waste categories (Plastic, Glass, Metal, Organic, Paper/Cardboard, Textiles, Battery, and General Trash).
-* **Confidence Scoring:** Generates probability percentages to indicate prediction reliability.
-* **On-Device AI:** Utilizes TensorFlow Lite for fast, localized processing without heavy server dependency.
+👥 Team Members (Section B)
 
-## 🛠️ Tech Stack
-* **AI/ML:** TensorFlow Lite, Python, Google Colab
-* **Frontend:** Flutter & Dart
-* **Backend:** FastAPI / Flask
-* **Database:** MongoDB
-* **Dataset:** Unified Waste Classification Dataset (Kaggle)
+* Khadija
+* Azeen Isha
+* Urwa Ahmad
+* Hibba Amir
+* Eman Fatima
+
+⸻
+
+🎯 Project Objective
+
+The goal of EcoScan is to automatically classify waste images into different categories and encourage proper waste disposal practices through Artificial Intelligence.
+
+⸻
+
+📊 Dataset
+
+Unified Waste Classification Dataset
+
+* Total Images: 64,000+
+* Number of Classes: 8
+
+Waste Categories
+
+* Battery
+* Glass
+* Metal
+* Organic Waste
+* Paper/Cardboard
+* Plastic
+* Textiles
+* Trash
+
+⸻
+
+🤖 Models Implemented
+
+MobileNet
+
+Deep Learning model optimized for image classification and mobile deployment.
+
+Random Forest Classifier
+
+Ensemble Machine Learning algorithm using multiple decision trees.
+
+Decision Tree Classifier
+
+Tree-based classification model.
+
+K-Nearest Neighbors (KNN)
+
+Instance-based Machine Learning algorithm.
+
+Logistic Regression
+
+Linear classification model for multi-class prediction.
+
+⸻
+
+📈 Model Performance
+
+Model	Accuracy
+MobileNet	72.68%
+Logistic Regression	71.25%
+Random Forest	48.70%
+K-Nearest Neighbors (KNN)	43.31%
+Decision Tree Classifier	31.96%
+
+🏆 Best Performing Model: MobileNet (72.68%)
+
+⸻
+
+⚙️ Project Workflow
+
+1. Dataset Collection
+2. Image Preprocessing
+3. Model Training
+4. Model Evaluation
+5. Waste Classification
+6. Prediction Testing
+
+⸻
+
+📂 Repository Structure
+
+EcoScan
+│
+├── Model_Code
+│   ├── MobileNet.ipynb
+│   ├── Random_Forest.ipynb
+│   ├── Decision_Tree_Classifier.ipynb
+│   ├── KNN.ipynb
+│   └── Logistic_Regression.ipynb
+│
+├── Saved_Models
+│
+├── Dataset
+│   └── Sample_Images
+│
+├── Screenshots
+│   ├── Accuracy Results
+│   ├── Classification Reports
+│   ├── Confusion Matrices
+│   └── Prediction Tests
+│
+├── Poster
+│   └── EcoScan_Poster.png
+│
+└── README.md
+
+⸻
+
+📸 Results
+
+The Screenshots folder contains:
+
+* Accuracy Results
+* Classification Reports
+* Confusion Matrices
+* Prediction Test Results
+
+for all implemented models.
+
+⸻
+
+🛠 Technologies Used
+
+* Python
+* Google Colab
+* NumPy
+* MobileNet
+
+⸻
+
+🌱 Future Work
+
+* Improve model accuracy
+* Develop a complete mobile application
+* Enable real-time camera-based classification
+* Add disposal recommendations
+* Expand the dataset with more real-world images
+
+⸻
+
+✅ Conclusion
+
+EcoScan demonstrates how Artificial Intelligence can be used to classify waste and support responsible waste management. By comparing multiple Machine Learning and Deep Learning models, the project highlights the effectiveness of AI-based solutions for environmental sustainability
