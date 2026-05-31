@@ -1,0 +1,4 @@
+Unified Waste Classification Dataset
+
+Source:
+https://www.kaggle.com/datasets/siddhantmaji/unified-waste-classification-dataset
