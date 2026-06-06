@@ -1,6 +1,8 @@
 ♻️ EcoScan: AI-Powered Waste Classification System
 
-EcoScan is an AI-based waste classification system developed to identify different types of waste from images. The project compares multiple Machine Learning and Deep Learning models to determine the most effective approach for waste classification and environmental sustainability.
+Overview
+
+EcoScan is an AI-powered waste classification system designed to identify different types of waste from images and promote sustainable waste management practices. The project leverages both Deep Learning and Machine Learning techniques to automatically classify waste into predefined categories and compare the performance of multiple state-of-the-art models.
 
 ⸻
 
@@ -16,7 +18,7 @@ EcoScan is an AI-based waste classification system developed to identify differe
 
 🎯 Project Objective
 
-The goal of EcoScan is to automatically classify waste images into different categories and encourage proper waste disposal practices through Artificial Intelligence.
+The primary objective of EcoScan is to automatically classify waste images into different categories using Artificial Intelligence and assist users in proper waste disposal. The project also evaluates and compares the performance of multiple AI models to identify the most effective approach for waste classification.
 
 ⸻
 
@@ -38,95 +40,134 @@ Waste Categories
 * Textiles
 * Trash
 
+Dataset Split
+
+* Training Set: 44,800 Images (70%)
+* Validation Set: 9,600 Images (15%)
+* Test Set: 9,600 Images (15%)
+
 ⸻
 
 🤖 Models Implemented
 
+EfficientNet-B0
+
+A lightweight and highly efficient convolutional neural network designed for image classification tasks with excellent accuracy-to-parameter ratio.
+
 MobileNet
 
-Deep Learning model optimized for image classification and mobile deployment.
+A deep learning model optimized for image classification and deployment on resource-constrained devices.
 
-Random Forest Classifier
+ResNet101
 
-Ensemble Machine Learning algorithm using multiple decision trees.
+A deep residual neural network consisting of 101 layers that utilizes skip connections to overcome the vanishing gradient problem and achieve high classification accuracy.
 
-Decision Tree Classifier
+Multi-Layer Perceptron (MLP)
 
-Tree-based classification model.
+A fully connected neural network architecture used as a baseline deep learning classifier.
 
-K-Nearest Neighbors (KNN)
+YOLO (You Only Look Once)
 
-Instance-based Machine Learning algorithm.
-
-Logistic Regression
-
-Linear classification model for multi-class prediction.
+A real-time object detection and classification model capable of identifying waste objects with high accuracy and speed.
 
 ⸻
 
 📈 Model Performance
 
-Model	Accuracy
+Model	Test Accuracy (%)
+YOLO	99.40
+EfficientNet-B0	98.56
+MobileNet	98.05
+ResNet101	96.76
+MLP	51.51
 
-MobileNet	72.68%
+🏆 Best Performing Model
 
-Logistic Regression	71.25%
+YOLO — 99.40% Test Accuracy
 
-Random Forest	48.70%
-
-K-Nearest Neighbors (KNN)	43.31%
-
-Decision Tree Classifier	31.96%
-
-
-🏆 Best Performing Model: MobileNet (72.68%)
+YOLO achieved the highest performance among all evaluated models, demonstrating exceptional capability in real-time waste detection and classification.
 
 ⸻
 
 ⚙️ Project Workflow
 
 1. Dataset Collection
-2. Image Preprocessing
-3. Model Training
-4. Model Evaluation
-5. Waste Classification
-6. Prediction Testing
+2. Data Cleaning and Organization
+3. Image Preprocessing
+4. Data Augmentation
+5. Model Training
+6. Model Validation
+7. Model Testing
+8. Waste Classification
+9. Performance Evaluation
 
 ⸻
 
+🧠 Methodology
+
+Image Preprocessing
+
+* Image Resizing (224 × 224)
+* Normalization
+* Tensor Conversion
+
+Data Augmentation
+
+* Random Horizontal Flip
+* Random Rotation
+* Color Jitter
+
+Training Configuration
+
+* Framework: PyTorch
+* Optimizer: AdamW
+* Loss Function: CrossEntropy Loss
+* Learning Rate Scheduler: ReduceLROnPlateau
+* Hardware: NVIDIA Tesla T4 GPU
+* Development Environment: Google Colab
+
+⸻
 
 📸 Results
 
-The Screenshots folder contains:
+The project includes:
 
-* Accuracy Results
-* Classification Reports
+* Accuracy Comparison Graphs
 * Confusion Matrices
+* Classification Reports
+* Validation Accuracy Curves
 * Prediction Test Results
-
-for all implemented models.
+* Model Comparison Analysis
 
 ⸻
 
 🛠 Technologies Used
 
 * Python
-* Google Colab
+* PyTorch
+* Torchvision
 * NumPy
-* MobileNet
+* Scikit-Learn
+* Matplotlib
+* Seaborn
+* Google Colab
+* OpenCV
 
 ⸻
 
 🌱 Future Work
 
-* Improve model accuracy
-* Develop a complete mobile application
-* Enable real-time camera-based classification
-* Add disposal recommendations
-* Expand the dataset with more real-world images
+* Develop a complete mobile application for real-time classification.
+* Integrate camera-based waste detection.
+* Add waste disposal recommendations for each category.
+* Expand the dataset with more real-world images.
+* Deploy the system as a cloud-based service.
+* Improve generalization for unseen waste objects.
 
 ⸻
 
 ✅ Conclusion
 
-EcoScan demonstrates how Artificial Intelligence can be used to classify waste and support responsible waste management. By comparing multiple Machine Learning and Deep Learning models, the project highlights the effectiveness of AI-based solutions for environmental sustainability
+EcoScan demonstrates the effectiveness of Artificial Intelligence in automating waste classification and supporting sustainable waste management practices. Through the comparison of multiple Machine Learning and Deep Learning models, the project achieved highly accurate waste classification results, with YOLO achieving the highest test accuracy of 99.40%.
+
+The system highlights the potential of AI-driven solutions in promoting environmental sustainability, reducing improper waste disposal, and enabling smarter waste management systems for the future
