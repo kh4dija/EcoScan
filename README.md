@@ -75,10 +75,15 @@ A real-time object detection and classification model capable of identifying was
 📈 Model Performance
 
 Model	Test Accuracy (%)
+
 YOLO	99.40
+
 EfficientNet-B0	98.56
+
 MobileNet	98.05
+
 ResNet101	96.76
+
 MLP	51.51
 
 🏆 Best Performing Model
